@@ -1,0 +1,11 @@
+<html><link rel='stylesheet' href='style.css'><body><div class='premium'><h1>Place Your Order</h1>
+<form onsubmit='send();return false;'>
+<input id='n' placeholder='Your Name' style='padding:12px;width:100%;margin:8px 0'>
+<input id='o' placeholder='Occasion' style='padding:12px;width:100%;margin:8px 0'>
+<button style='padding:12px 20px'>Send to WhatsApp</button></form>
+<script>
+function send(){
+let msg='Hello Aarjav, I am '+document.getElementById('n').value+' and I need a design for '+document.getElementById('o').value;
+window.open('https://wa.me/916377861392?text='+encodeURIComponent(msg));
+}
+</script></div></body></html>
